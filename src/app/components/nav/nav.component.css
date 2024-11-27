@@ -1,0 +1,26 @@
+
+
+
+
+
+.login-icon{
+    height: 75px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  
+    .login {
+      justify-content: center;    /* Centraliza no layout empilhado */
+      margin-top: 0.5rem;
+    }
+  
+    .login-icon {
+      max-height: 30px;
+    }
+
+  }
+ 
+ 
+  

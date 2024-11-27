@@ -1,0 +1,18 @@
+
+
+
+
+
+<div>
+    @if(auth.isAuthenticated$ | async){
+        <img src={{login}} alt="Login" class="login-icon" (click)="auth.logout()">
+    } @else {
+        <img src={{login}} alt="Login" class="login-icon" (click)="auth.loginWithRedirect()">
+    }
+</div>
+
+
+
+
+
+

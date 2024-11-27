@@ -1,0 +1,117 @@
+
+
+
+
+.input-pesquisa {
+    border: 3px solid #C50E2E;
+    padding: 15px;
+    border-radius: 10px;
+    width: 500px; /* Ajuste a largura conforme necessário */
+    font-size: 16px; /* Ajuste para harmonizar com o placeholder */
+    box-sizing: border-box;
+}
+  
+.input-pesquisa::placeholder {
+    color: #c50e2dc1;
+    font-size: 16px; /* Deve coincidir com o texto digitado */
+    text-align: left; /* Alinha o texto do placeholder à esquerda */
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+/* Main */
+h1{
+    color: #fff;
+    position: relative;
+    top: 80px;
+    text-align: center;
+    font-size: 50px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card{
+    background: #8D99AE;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 120px;
+    height: 600px;
+    transition: 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.img-rick{
+    height: 400px;
+    width: 700px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+h2{
+    color: #C50E2E;
+    font-size: 26px;
+    position: relative;
+    top: 10px;
+}
+
+.description{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 40px;
+}
+
+.view{
+    color: #255DBF;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 70px;
+}
+
+.validacao{
+    display: flex;
+    width: 300px;
+    justify-content: end;
+    width: 300px;
+    position: relative;
+    left: 400px;
+}
+
+.img-validacao{
+   height: 90px;
+   cursor: pointer;
+}
+
+.img-validacao:hover{
+    border-radius: 50%;
+    background: #545e6e;  
+}
+
+.img-estrela{
+    height: 100px;
+    cursor: pointer;
+}
+
+.img-estrela:hover{
+    border-radius: 50%;
+    background: #545e6e;  
+}
