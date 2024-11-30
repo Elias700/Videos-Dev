@@ -26,6 +26,18 @@ h1 {
     font-size: 1.5rem;  /* Ajuste o tamanho da fonte */
 }
 
+h2{
+    color: #C50E2E;
+}
+
+.description{
+    color: #fff;
+}
+
+.view{
+    color: #255DBF;
+}
+
 /* Grid responsiva para os cards */
 .videos-container {
     display: grid;
