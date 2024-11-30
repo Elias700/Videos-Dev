@@ -1,31 +1,43 @@
 
 
-
-
-
-
 <div class="pesquisa">
-    <input type="text" placeholder="Pesquise" class="input-pesquisa">
-</div> 
+    <input 
+        type="text" 
+        placeholder="Pesquise" 
+        class="input-pesquisa" 
+        [(ngModel)]="searchQuery" 
+        (input)="onInputChange($event)"
+    >
+</div>
 
 <main>
-    <h1>Confira os vídeos em destaque abaixo</h1>
-    <section>
-        
-            <div class="card">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                    <img src="rick.png" alt="rick" class="img-rick">
-                </a>
-                
-            <h2>Rick Astley - Never Gonna Give You Up (Official Music Video)</h2>
-            <p class="description">The official video for “Never Gonna Give You Up” by Rick Astley</p>
-            <p class="view">Visualizações 1200000000</p>
-                <div class="validacao">
-                    <img src={{like}} alt="like" class="img-validacao">   
-                    <img src={{deslike}} alt="deslike" class="img-validacao">
-                    <img src={{estrela}} alt="estrela" class="img-estrela">           
-                </div>
+    <h1 style="color: #fff;">Confira os vídeos em destaque abaixo</h1>
+    <div class="videos-container">
+        <section *ngFor="let video of filteredVideos" class="card">
+            <a [href]="video.url" target="_blank">
+                <img [src]="video.thumbnail" [alt]="video.title" class="card-img">
+            </a>
+            <h2>{{ video.title }}</h2>
+            <p class="description">O vídeo oficial de "{{ video.title }}"</p>
+            <p class="view">Visualizações: {{ video.views }}</p>
+            <div class="validacao">
+                <img src="{{like}}" alt="like" class="icon">   
+                <img src="{{deslike}}" alt="deslike" class="icon">
+                <img src="{{estrela}}" alt="estrela" class="icon">
             </div>
-    
-    </section>
+        </section>
+    </div>
 </main>
+
+    
+        
+        
+ 
+
+        
+       
+
+
+
+
+    
