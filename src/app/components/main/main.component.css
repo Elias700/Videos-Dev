@@ -15,7 +15,7 @@ body {
     font-size: 1rem;
     border: 3px solid rgb(170, 23, 23);
     border-radius: 20px;
-    margin-bottom: 20px; /* Dá um espaçamento entre o input e os cards */
+    margin-bottom: 20px; 
     position: relative;
     top: 30px;
 }
@@ -23,7 +23,7 @@ body {
 h1 {
     text-align: center;
     margin: 20px 0;
-    font-size: 1.5rem;  /* Ajuste o tamanho da fonte */
+    font-size: 1.5rem;  
 }
 
 h2{
@@ -38,16 +38,16 @@ h2{
     color: #255DBF;
 }
 
-/* Grid responsiva para os cards */
+
 .videos-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste o tamanho mínimo para dispositivos móveis */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     padding: 0 20px;
-    justify-items: center; /* Garante que os itens da grid fiquem centralizados */
+    justify-items: center; 
 }
 
-/* Estilo dos cards */
+
 .card {
     background-color: #8D99AE;
     border: 1px solid #ddd;
@@ -58,12 +58,12 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;  /* Garante que os itens dentro do card fiquem centralizados */
+    align-items: center;  
     height: 100%;
     padding: 10px;
 }
 
-/* Estilo das imagens dentro dos cards */
+
 .card-img {
     width: 100%;
     height: 200px;
@@ -77,29 +77,29 @@ h2{
     transform: scale(1.05);
 }
 
-/* Estilo da descrição e visualizações dentro do card */
+
 .description, .view {
     margin: 10px;
     font-size: 0.9rem;
-    text-align: center; /* Centraliza o texto */
+    text-align: center; 
 }
 
-/* Validação e alinhamento dos ícones */
+
 .validacao {
     display: flex;
-    justify-content: center;  /* Centraliza os ícones horizontalmente */
-    gap: 10px;  /* Adiciona um pequeno espaço entre os ícones */
+    justify-content: center;  
+    gap: 10px;  
     padding: 10px 0;
 }
 
-/* Estilo dos ícones */
+
 .icon {
     width: 30px;
     height: auto;
     cursor: pointer;
 }
 
-/* Responsividade para telas menores que 768px */
+
 @media screen and (max-width: 768px) {
     .input-pesquisa {
         width: 95%;
@@ -114,7 +114,7 @@ h2{
     }
 
     h1 {
-        font-size: 1.4rem; /* Ajuste para telas menores */
+        font-size: 1.4rem; 
     }
 
     h2 {
@@ -130,14 +130,14 @@ h2{
     }
 }
 
-/* Responsividade para telas grandes (tablets, desktops) */
+
 @media screen and (min-width: 1024px) {
     .videos-container {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajuste para tablets e desktops */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     }
 
     h1 {
-        font-size: 2.5rem; /* Ajuste para telas grandes */
+        font-size: 2.5rem; 
     }
 
     h2 {
@@ -153,13 +153,13 @@ h2{
     }
 }
 
-/* Responsividade para telas muito grandes (TVs) */
+
 @media screen and (min-width: 1600px) {
     .videos-container {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajuste para TVs */
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
 
     .card-img {
-        height: 250px; /* Aumenta a altura da imagem em telas grandes */
+        height: 250px; 
     }
 }

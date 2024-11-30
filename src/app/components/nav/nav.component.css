@@ -12,7 +12,7 @@
 @media (max-width: 600px) {
   
     .login {
-      justify-content: center;    /* Centraliza no layout empilhado */
+      justify-content: center;   
       margin-top: 0.5rem;
     }
   
